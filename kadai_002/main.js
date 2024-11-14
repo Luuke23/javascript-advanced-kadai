@@ -95,14 +95,13 @@ const gameOver = id => {
   typed = '';
   typedfield.textContent = typed;
   untypedfield.textContent = 'タイムアップ！';
+
   setTimeout(() =>{
     const result = confirm(rankCheck(score));
+    if (result == true) {
+      window.location.reload();
+    } 
   },10);
-  
-  if (result == true) {
-    window.location.reload();
-  } 
-  
 };
 
 // カウントダウンタイマー
