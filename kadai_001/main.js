@@ -9,7 +9,7 @@ const typedfield = document.getElementById('typed');
 const wrap = document.getElementById('wrap');
 const start = document.getElementById('start');
 const count = document.getElementById('count');
-// const wordCount = document.getElementById('wordcount');
+const wordCount = document.getElementById('wordcount');
 
 // 複数のテキストを格納する配列
 const textList=[
@@ -63,7 +63,7 @@ const keyPress = e => {
   untyped = untyped.substring(1);
   typedfield.textContent = typed;
   untypedfield.textContent = untyped;
-  // wordCount.textContent = typed.length;
+  wordCount.textContent = score;
 
 
   // テキストがなくなったら新しいテキストを表示
